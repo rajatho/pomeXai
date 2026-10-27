@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+venv_torch/
+backend/venv/
+backend/venv_torch/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment and secrets
+.env
+
+# Model checkpoints (GitHub 100MB file limit; local .pt is ~427MB)
+models/*.pt
+models/*.pth
+models/*.ckpt
+models/*.keras
+models/*.h5
+*.pt
+*.pth
+
+# Runtime data
+uploads/
+static/reports/
+static/gradcam/
+database/*.db
+database/*.db-journal
+
+# Dataset images
+dataset/raw/**
+dataset/processed/**
+!dataset/raw/.gitkeep
+!dataset/processed/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
